@@ -8,13 +8,13 @@ def test_check_form():
     browser.element('#lastName').click().should(be.blank).type('Shamilov')
     browser.element('#userEmail').click().should(be.blank).type('shamilov50@mail.ru')
     browser.element('#gender-radio-1').double_click()
-    browser.element('#userNumber').click().should(be.blank).type('88005553535')
+    browser.element('#userNumber').click().should(be.blank).type('8005553535')
     browser.element('#dateOfBirthInput').click()
     browser.element('.react-datepicker__month-select').click()
-    browser.element('.react-datepicker__month-select [value="1"]').click()
+    browser.element('.react-datepicker__month-select [value="8"]').click()
     browser.element('.react-datepicker__year-select').click()
-    browser.element('.react-datepicker__year-select [value="1995"]').click()
-    browser.element('[class*=day--028]').click()
+    browser.element('.react-datepicker__year-select [value="1997"]').click()
+    browser.element('[class*=day--07]').click()
     browser.element('#subjectsInput').click().should(be.blank).type('Eng').press_enter()
     browser.element('[for=hobbies-checkbox-1]').click()
     browser.element('[for=hobbies-checkbox-2]').click()
@@ -33,7 +33,7 @@ def test_check_form():
             'Shamo Shamilov',
             'shamilov50@mail.ru',
             'Male',
-            '88005553535',
+            '8005553535',
             '07 August,1997',
             'English',
             'Sports, Reading, Music',
